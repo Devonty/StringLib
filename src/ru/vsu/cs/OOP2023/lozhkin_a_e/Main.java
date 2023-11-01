@@ -17,7 +17,7 @@ public class Main {
 
         System.out.println("-".repeat(20) + "join");
 
-        System.out.println(StringUtils.join(" ", List.of("1", "2", "#")));
+        System.out.println(StringUtils.join("--", List.of("1", "2", "#")));
 
         System.out.println("-".repeat(20) + "replace");
 
@@ -53,10 +53,12 @@ public class Main {
         System.out.println("-".repeat(20) + "trims");
 
         String toTrim = "    4spaces    ";
-        System.out.println(toTrim);
+        System.out.println("|"+ toTrim + "|");
         System.out.println("|"  + StringUtils.leftTrim(toTrim) + "|");
         System.out.println("|"  + StringUtils.rightTrim(toTrim) + "|");
         System.out.println("|"  + StringUtils.trim(toTrim) + "|");
+
+        System.out.println("|"  + StringUtils.trim("        ") + "|");
 
     }
 

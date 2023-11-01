@@ -47,7 +47,7 @@ public class StringUtils {
     public static List<String> split(String string, String det) {
         List<String> lst = new ArrayList<>();
         int indexStart = 0;
-        int indexEnd = 0;
+        int indexEnd;
         while (indexStart < string.length()) {
             int tmpI = indexOf(string, det, indexStart);
             indexEnd = tmpI != -1 ? tmpI : string.length();
